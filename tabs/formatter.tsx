@@ -15,7 +15,7 @@ const XiaoHongShuFormatter = ({ posts }: { posts: PostDetail[] }) => {
   // 处理文本内容（移除URL）
   const cleanedContent = posts.map(post => {
     // 移除URL
-    const cleanedText = `${post.title} \n ${post.content.replace(/https?:\/\/\S+/g, '')}`.trim()
+    const cleanedText = `${post.title} \n\n ${post.content.replace(/https?:\/\/\S+/g, '')}`.trim()
     return cleanedText
   }).join('\n\n')
   

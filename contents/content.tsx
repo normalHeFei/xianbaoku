@@ -136,5 +136,3 @@ function openNewTab(type, urls) {
 
 
 addCheckboxAndButtons()
-// 如果需要暴露给全局作用域
-window.openNewTab = openNewTab
